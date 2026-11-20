@@ -26,6 +26,16 @@ A biblioteca reúne **28 perfis de agentes**, **12 skills essenciais** e **49 es
 
 ## Arquitetura
 
+### IA como ferramenta, com direção humana
+
+Criei esta estrutura para organizar minha produção com IA: fornecer contexto útil, definir responsabilidades e verificar as entregas. O trabalho reúne inspirações de outros desenvolvedores e projetos da comunidade, com as referências registradas em [Fontes e critérios de pesquisa](docs/12-fontes.md).
+
+A cobertura Full Stack conecta frontend, backend, banco de dados, testes, segurança e documentação. Os perfis apoiam cada área conforme a necessidade do projeto; sua presença não substitui a validação da aplicação real.
+
+Quem desenvolve continua responsável por entender o problema, escolher prioridades, revisar decisões e conferir os resultados. Ganhos de produtividade e economia de tokens precisam de medições comparáveis; não são garantidos pela instalação do harness.
+
+Veja as [artes e o texto para apresentação no LinkedIn](media/linkedin/README.md).
+
 ```mermaid
 flowchart LR
     A[Objetivo e critérios de aceite] --> B[Fila local com dependências]
