@@ -69,6 +69,8 @@ python scripts/engineering.py --board $fila status
 python scripts/engineering.py --board $fila usage
 ```
 
+O `run` exige um worktree limpo. Se acabou de instalar as skills, revise `git status` no projeto e registre os arquivos de configuração no commit inicial. Para trabalhar com alterações já revisadas, passe `--allow-dirty`.
+
 Use `brief` para levar a tarefa ao Codex Desktop ou Claude Code quando preferir uma sessão interativa. O [guia do primeiro projeto](docs/38-primeira-entrega.md) explica `advance`, verificadores de confiança, instalação de dependências, limites de tokens e passagem para deploy.
 
 ### Criar uma fila persistente

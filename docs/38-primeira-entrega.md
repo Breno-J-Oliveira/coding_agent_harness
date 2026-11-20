@@ -16,6 +16,8 @@ python scripts/bootstrap.py --target $projeto --engine both --apply
 
 Escolha `codex` ou `claude` para instalar em apenas um agente. O bootstrap preserva skills e instruções existentes. Para um projeto já iniciado, use a raiz que você mantém e dispense a criação da pasta e do Git. A sessão interativa pode abrir a pasta diretamente após a instalação.
 
+Em um terminal Bash ou Zsh, use `projeto="$(pwd)/../meu-produto"`, `mkdir -p "$projeto"` e `fila="$HOME/meu-produto-fila.json"` no lugar das atribuições e da criação de pasta do PowerShell. Nos comandos seguintes, mantenha `"$projeto"` e `"$fila"` entre aspas. Em sistemas onde o executável se chama `python3`, use esse nome.
+
 ## Entregue a primeira jornada
 
 Abra o projeto e invoque `$idea-to-release` no Codex ou `/idea-to-release` no Claude Code. Passe contexto de produto em linguagem simples.
