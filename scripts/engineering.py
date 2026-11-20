@@ -175,7 +175,7 @@ def work(board, state, task, timeout, allow_dirty, model, minimal_config):
         task.update(status="review" if reported == "ready" else "failed", codex_exit=code,
                     runner_outcome=reported)
         save(board, state)
-    print(f"{task['id']} → {task['status']} | {task_log}")
+    print(f"{task['id']} -> {task['status']} | {task_log}")
     return 0 if reported == "ready" else 1
 
 
