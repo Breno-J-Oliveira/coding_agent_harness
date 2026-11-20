@@ -1,0 +1,27 @@
+# Não versionar arquivos locais e segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+node_modules/
+.cache/
+.codex/
+*.token
+*.secret
+*.backup
+.DS_Store
+Thumbs.db
+__pycache__/
+.pytest_cache/
+work/
+
+# Privacidade do kit em instalações dentro de projetos
+**/devkit-backups/
+**/devkit-state.json
+**/.devkit-install.lock
+*.real.jsonl
+*_private.jsonl

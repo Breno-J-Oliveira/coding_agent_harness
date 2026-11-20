@@ -1,0 +1,232 @@
+{
+  "schema": 1,
+  "version": "2.0.0",
+  "agents": [
+    {
+      "id": "accessibility",
+      "profiles": [
+        "web",
+        "full"
+      ]
+    },
+    {
+      "id": "api_reviewer",
+      "profiles": [
+        "web",
+        "full"
+      ]
+    },
+    {
+      "id": "architect",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "backend",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "customer",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "database",
+      "profiles": [
+        "web",
+        "full",
+        "security"
+      ]
+    },
+    {
+      "id": "dependency_auditor",
+      "profiles": [
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "devops",
+      "profiles": [
+        "web",
+        "full",
+        "security"
+      ]
+    },
+    {
+      "id": "director",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "docs_scout",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "documentation",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "file_scout",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "frontend",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "fullstack",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "integration_reviewer",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "observability",
+      "profiles": [
+        "web",
+        "full"
+      ]
+    },
+    {
+      "id": "performance",
+      "profiles": [
+        "web",
+        "full"
+      ]
+    },
+    {
+      "id": "privacy",
+      "profiles": [
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "product_owner",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "qa",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "release_manager",
+      "profiles": [
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "security",
+      "profiles": [
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "seo",
+      "profiles": [
+        "web",
+        "full"
+      ]
+    },
+    {
+      "id": "tech_lead",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "test_triage",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "threat_modeler",
+      "profiles": [
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "ui_designer",
+      "profiles": [
+        "web",
+        "full"
+      ]
+    },
+    {
+      "id": "ux_researcher",
+      "profiles": [
+        "web",
+        "full"
+      ]
+    }
+  ]
+}

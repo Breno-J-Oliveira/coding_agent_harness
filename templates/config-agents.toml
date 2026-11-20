@@ -1,0 +1,12 @@
+# EXEMPLO. MESCLAR no config.toml existente, não sobrescrever o arquivo.
+# Se [agents] já existe, copie APENAS as chaves abaixo para essa seção.
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 3
+# Defina os campos abaixo apenas após validar a disponibilidade com seu provider:
+# default_subagent_model = "nome-real-do-modelo"
+# default_subagent_reasoning_effort = "low"
+
+# Não precisa declarar todos os papéis aqui quando usa TOMLs em ~/.codex/agents/
+# O formato de arquivo individual é explicado na documentação oficial:
+# https://learn.chatgpt.com/docs/agent-configuration/subagents

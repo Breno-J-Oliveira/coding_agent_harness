@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "tools": [
+    {
+      "id": "rtk",
+      "category": "token-economy",
+      "windows_winget": "rtk-ai.rtk",
+      "mac_linux_brew": "rtk",
+      "probe": "rtk",
+      "source": "https://github.com/rtk-ai/rtk",
+      "profiles": [
+        "core",
+        "web",
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "playwright-cli",
+      "category": "browser-testing",
+      "npm_package": "@playwright/cli@0.1.21",
+      "probe": "playwright-cli",
+      "source": "https://github.com/microsoft/playwright-cli",
+      "profiles": [
+        "web",
+        "full"
+      ]
+    },
+    {
+      "id": "semgrep",
+      "category": "sast",
+      "uv_package": "semgrep",
+      "probe": "semgrep",
+      "source": "https://github.com/semgrep/semgrep",
+      "profiles": [
+        "security",
+        "full"
+      ]
+    },
+    {
+      "id": "gitleaks",
+      "category": "secrets-scanning",
+      "windows_winget": "Gitleaks.Gitleaks",
+      "mac_linux_brew": "gitleaks",
+      "probe": "gitleaks",
+      "source": "https://github.com/gitleaks/gitleaks",
+      "profiles": [
+        "security",
+        "full"
+      ]
+    }
+  ]
+}

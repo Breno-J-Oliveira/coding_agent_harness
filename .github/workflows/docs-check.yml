@@ -1,0 +1,27 @@
+name: DevKit offline checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ['3.11', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Static validation
+        run: |
+          python scripts/validate-package.py
+          python scripts/skillpacks.py validate
+      - name: Link and TOML validation
+        run: python scripts/check-docs.py
+      - name: Installer and tooling tests (offline)
+        run: python -m unittest discover -s tests -v

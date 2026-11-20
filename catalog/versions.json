@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "updated": "2026-11-12",
+  "npm": {
+    "skills": "1.8.1",
+    "impeccable": "4.8.2",
+    "@playwright/cli": "0.1.21"
+  },
+  "notes": "CLI npm selecionadas conforme versões consultadas em 12/11/2026. Skills terceirizadas por GitHub não estão fixadas em commits. Verifique licenças, mantenedores e atualizações antes de instalar."
+}

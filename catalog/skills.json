@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "updated": "2026-11-12",
+  "notes": "Fontes e nomes de skills consultados em skills.sh/GitHub; revalidar a cada atualização. Seleção não implica auditoria do código remoto.",
+  "skills": [
+    {"name":"code-review-and-quality","repo":"addyosmani/agent-skills","profiles":["core","web","security","full"],"reason":"Revisão com cinco eixos e critérios objetivos","source":"https://www.skills.sh/addyosmani/agent-skills/code-review-and-quality"},
+    {"name":"diagnosing-bugs","repo":"mattpocock/skills","profiles":["core","web","full"],"reason":"Depuração reproduzível e baseada em sinais","source":"https://www.skills.sh/mattpocock/skills/diagnosing-bugs"},
+    {"name":"tdd","repo":"mattpocock/skills","profiles":["core","web","full"],"reason":"Desenvolvimento incremental com testes de comportamento","source":"https://www.skills.sh/mattpocock/skills/tdd"},
+    {"name":"code-security","repo":"semgrep/skills","profiles":["core","web","security","full"],"reason":"Orientações de coding seguro em várias linguagens; não substitui scanner","source":"https://www.skills.sh/semgrep/skills/code-security"},
+    {"name":"web-design-guidelines","repo":"vercel-labs/agent-skills","profiles":["web","full"],"reason":"Revisão de experiência, acessibilidade e UI","source":"https://www.skills.sh/vercel-labs/agent-skills/web-design-guidelines"},
+    {"name":"vercel-react-best-practices","repo":"vercel-labs/agent-skills","profiles":["web","full"],"reason":"Otimização React/Next.js em regras de impacto","source":"https://www.skills.sh/vercel-labs/agent-skills/vercel-react-best-practices"},
+    {"name":"ui-ux-pro-max","repo":"nextlevelbuilder/ui-ux-pro-max-skill","profiles":["web","full"],"reason":"Design system, tokens, estilos e tipografia","source":"https://www.skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max"},
+    {"name":"seo-audit","repo":"coreyhaines31/marketingskills","profiles":["web","full"],"reason":"Auditoria técnica de SEO","source":"https://www.skills.sh/coreyhaines31/marketingskills/seo-audit"},
+    {"name":"site-architecture","repo":"coreyhaines31/marketingskills","profiles":["web","full"],"reason":"Arquitetura de conteúdo, URLs e links internos","source":"https://www.skills.sh/coreyhaines31/marketingskills/site-architecture"},
+    {"name":"schema-markup","repo":"coreyhaines31/marketingskills","profiles":["full"],"reason":"Dados estruturados JSON-LD com validação","source":"https://www.skills.sh/coreyhaines31/marketingskills/schema-markup"},
+    {"name":"accessibility","repo":"addyosmani/web-quality-skills","profiles":["web","full"],"reason":"Auditoria WCAG e testes de teclado","source":"https://www.skills.sh/addyosmani/web-quality-skills/accessibility"},
+    {"name":"performance","repo":"addyosmani/web-quality-skills","profiles":["web","full"],"reason":"Diagnóstico de performance orientado a métricas","source":"https://www.skills.sh/addyosmani/web-quality-skills/performance"},
+    {"name":"supabase-postgres-best-practices","repo":"supabase/agent-skills","profiles":["full"],"reason":"Postgres, índices, migrações, RLS; quando usar Postgres","source":"https://www.skills.sh/supabase/agent-skills/supabase-postgres-best-practices"},
+    {"name":"differential-review","repo":"trailofbits/skills","profiles":["security","full"],"reason":"Auditoria de diferenças com riscos e evidências","source":"https://www.skills.sh/trailofbits/skills/differential-review"},
+    {"name":"insecure-defaults","repo":"trailofbits/skills","profiles":["security","full"],"reason":"Defaults inseguros de autenticação e configuração","source":"https://www.skills.sh/trailofbits/skills/insecure-defaults"},
+    {"name":"supply-chain-risk-auditor","repo":"trailofbits/skills","profiles":["security","full"],"reason":"Avaliação de risco de dependências e supply chain","source":"https://www.skills.sh/trailofbits/skills/supply-chain-risk-auditor"},
+    {"name":"web-quality-audit","repo":"addyosmani/web-quality-skills","profiles":["full"],"reason":"Auditoria integrada de qualidade web","source":"https://www.skills.sh/addyosmani/web-quality-skills/web-quality-audit"},
+    {"name":"to-spec","repo":"mattpocock/skills","profiles":["full"],"reason":"Conversão de pedidos em especificações revisáveis","source":"https://www.skills.sh/mattpocock/skills/to-spec"}
+  ],
+  "special_installers": [
+    {"id":"impeccable","profiles":["web","full"],"command":["npx","-y","impeccable","install","--providers=codex","--scope=global"],"source":"https://github.com/pbakaus/impeccable","caution":"Pode criar hook; revisar e aprovar em /hooks."},
+    {"id":"unslop","profiles":[],"command":[],"source":"https://github.com/heydamir/unslop","caution":"Alternativa sob demanda ao Impeccable, evite instalar ambos por padrão."}
+  ]
+}

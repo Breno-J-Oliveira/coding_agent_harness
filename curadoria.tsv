@@ -1,0 +1,20 @@
+Área	Skill/recurso	Repositório	Prioridade	Escopo	Perfil	Racional
+Design	impeccable	pbakaus/impeccable	P0	global/project	sim	Designer audit, detector; CLI own installer
+Design	ui-ux-pro-max	nextlevelbuilder/ui-ux-pro-max-skill	P0	project	sim	Pesquisa de estilo, tokens, UI
+Design	web-design-guidelines	vercel-labs/agent-skills	P0	project	sim	Revisão UI/acessibilidade
+Design	unslop	heydamir/unslop	P1	project	opcional	Alternativa anti-slop
+Design	design-taste-frontend	Leonxlnx/taste-skill	P1	project	opcional	Art direction; não combinar tudo
+Frontend	react-best-practices	vercel-labs/agent-skills	P0	project	sim,se React	React/Next performance
+Frontend	composition-patterns	vercel-labs/agent-skills	P1	project	opcional	Component APIs
+Engenharia	diagnosing-bugs	mattpocock/skills	P0	project	sim	Diagnóstico reproduzível
+Engenharia	tdd	mattpocock/skills	P1	project	opcional	Fatia vertical em testes
+Engenharia	code-review-and-quality	addyosmani/agent-skills	P0	project	sim	Review por critério
+Backend/DB	supabase-postgres-best-practices	supabase/agent-skills	P0	project	sim,se Postgres	SQL, RLS, migrações
+Segurança	code-security	semgrep/skills	P0	project	sim	Secure coding, sem scanner automático
+Segurança	security-audit	cloudflare/security-audit-skill	P1	sandbox	opcional	Auditoria profunda de risco
+Segurança	static-analysis	trailofbits/skills	P1	sandbox	opcional	Análise estática defensiva
+SEO	seo-audit	coreyhaines31/marketingskills	P0	project	sim,se público	SEO técnico
+SEO	schema	coreyhaines31/marketingskills	P1	project	opcional	JSON-LD
+SEO	site-architecture	coreyhaines31/marketingskills	P1	project	opcional	Informação e IA de site
+Tests	playwright-cli	microsoft/playwright-cli	P0	project	sim,se Web	CLI e skill integrada
+Observabilidade	sentry-for-ai	getsentry/sentry-for-ai	P1	project	opcional	Instrumentação em produção

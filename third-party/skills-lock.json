@@ -1,0 +1,17 @@
+{
+  "source": "https://github.com/addyosmani/agent-skills",
+  "revision": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
+  "license": "MIT",
+  "scanner_version": "2.3.2",
+  "skills": {
+    "code-simplification": {
+      "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+      "SKILL.md": "e13b433345e6bf425c3625442ac1b3507b371c18d7ea3e3db822da7a7f742a29"
+    },
+    "observability-and-instrumentation": {
+      "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+      "references/observability-checklist.md": "25fcd0e854596a5ab6f11b002050d245bf78f5ae0fcbd1df699b89451ae0e1e8",
+      "SKILL.md": "8e71d0b45376deac9850aed899aa52ebb4f537f0d29408b3fdfaeadad044168c"
+    }
+  }
+}

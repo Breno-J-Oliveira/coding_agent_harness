@@ -1,0 +1,946 @@
+{
+  "schema": 3,
+  "updated": "2026-11-12",
+  "policy": "Packs sob demanda; nenhum download externo sem --apply --with-external; instalação global somente por opção. O catálogo não é garantia de auditoria de terceiros.",
+  "packs": [
+    {
+      "id": "engineering",
+      "description": "Engenharia, arquitetura, code review, diagnóstico e fluxos de trabalho",
+      "local_skills": [
+        "feature-slicing",
+        "codebase-navigation",
+        "root-cause-debugging",
+        "pr-review-evidence",
+        "architecture-decision-records"
+      ],
+      "external_skills": [
+        "mattpocock/skills:diagnosing-bugs",
+        "mattpocock/skills:tdd",
+        "mattpocock/skills:code-review",
+        "mattpocock/skills:domain-modeling",
+        "mattpocock/skills:improve-codebase-architecture",
+        "mattpocock/skills:to-spec",
+        "obra/superpowers:verification-before-completion",
+        "obra/superpowers:systematic-debugging"
+      ]
+    },
+    {
+      "id": "frontend",
+      "description": "React, TypeScript, design responsivo e estrutura de componentes",
+      "local_skills": [
+        "react-component-contracts",
+        "frontend-performance",
+        "forms-validation"
+      ],
+      "external_skills": [
+        "vercel-labs/agent-skills:vercel-react-best-practices",
+        "vercel-labs/agent-skills:vercel-composition-patterns",
+        "vercel-labs/agent-skills:vercel-react-view-transitions",
+        "vercel-labs/agent-skills:web-design-guidelines"
+      ]
+    },
+    {
+      "id": "nextjs",
+      "description": "Next.js moderno, Server Components, cache e migrações",
+      "local_skills": [
+        "nextjs-boundaries",
+        "nextjs-cache-review"
+      ],
+      "external_skills": [
+        "vercel/next.js:next-cache-components-optimizer",
+        "vercel/next.js:next-cache-components-adoption"
+      ]
+    },
+    {
+      "id": "design",
+      "description": "UI premium, design systems, antisslop visual, espaçamento e motion",
+      "local_skills": [
+        "design-token-system",
+        "ai-ui-pattern-audit",
+        "visual-regression"
+      ],
+      "external_skills": [
+        "nextlevelbuilder/ui-ux-pro-max-skill:ui-ux-pro-max",
+        "vercel-labs/agent-skills:web-design-guidelines"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "description": "WCAG 2.2, teclado, screen readers e formulários",
+      "local_skills": [
+        "wcag-keyboard-audit",
+        "forms-validation"
+      ],
+      "external_skills": [
+        "addyosmani/web-quality-skills:accessibility",
+        "vercel-labs/agent-skills:web-design-guidelines"
+      ]
+    },
+    {
+      "id": "seo",
+      "description": "SEO técnico, indexação, schemas e conteúdo escalável",
+      "local_skills": [
+        "technical-seo-check",
+        "schema-jsonld-qa",
+        "search-intent-mapping"
+      ],
+      "external_skills": [
+        "coreyhaines31/marketingskills:seo-audit",
+        "coreyhaines31/marketingskills:site-architecture",
+        "coreyhaines31/marketingskills:schema",
+        "coreyhaines31/marketingskills:ai-seo",
+        "coreyhaines31/marketingskills:programmatic-seo",
+        "addyosmani/web-quality-skills:seo"
+      ]
+    },
+    {
+      "id": "performance",
+      "description": "Core Web Vitals, profiling, bundle e carregamento",
+      "local_skills": [
+        "frontend-performance",
+        "load-test-planning",
+        "performance-budget"
+      ],
+      "external_skills": [
+        "addyosmani/web-quality-skills:performance",
+        "addyosmani/web-quality-skills:core-web-vitals",
+        "addyosmani/web-quality-skills:web-quality-audit"
+      ]
+    },
+    {
+      "id": "backend-node",
+      "description": "Node/NestJS, APIs, filas e regras de negócio",
+      "local_skills": [
+        "api-pagination-filtering",
+        "authz-matrix",
+        "background-jobs",
+        "webhook-idempotency"
+      ],
+      "external_skills": [
+        "mattpocock/skills:domain-modeling"
+      ]
+    },
+    {
+      "id": "backend-python",
+      "description": "Python, FastAPI, typing, migrações e testes",
+      "local_skills": [
+        "fastapi-api-hygiene",
+        "python-dependency-safety",
+        "api-pagination-filtering"
+      ],
+      "external_skills": [
+        "trailofbits/skills:modern-python",
+        "vercel-labs/academy-skills:python-on-vercel"
+      ]
+    },
+    {
+      "id": "backend-php",
+      "description": "PHP, Laravel, sessão, autenticação e SQL",
+      "local_skills": [
+        "php-security-hygiene",
+        "authz-matrix",
+        "api-pagination-filtering"
+      ],
+      "external_skills": []
+    },
+    {
+      "id": "database",
+      "description": "Postgres, Prisma, SQL, RLS, migrações e índices",
+      "local_skills": [
+        "sql-index-analysis",
+        "migration-zero-downtime",
+        "rls-policy-verification"
+      ],
+      "external_skills": [
+        "supabase/agent-skills:supabase-postgres-best-practices",
+        "prisma/skills:prisma-cli"
+      ]
+    },
+    {
+      "id": "security",
+      "description": "AppSec autorizado, supply chain, threat modeling e segredos",
+      "local_skills": [
+        "authz-matrix",
+        "secrets-exposure-response",
+        "security-header-audit",
+        "supply-chain-due-diligence"
+      ],
+      "external_skills": [
+        "semgrep/skills:code-security",
+        "trailofbits/skills:differential-review",
+        "trailofbits/skills:insecure-defaults",
+        "trailofbits/skills:supply-chain-risk-auditor",
+        "trailofbits/skills:variant-analysis",
+        "trailofbits/skills:sharp-edges",
+        "trailofbits/skills:semgrep"
+      ]
+    },
+    {
+      "id": "qa-testing",
+      "description": "E2E, contratos, propriedades, flakiness e testes",
+      "local_skills": [
+        "e2e-critical-flows",
+        "contract-testing",
+        "flaky-test-triage",
+        "visual-regression"
+      ],
+      "external_skills": [
+        "trailofbits/skills:property-based-testing",
+        "mattpocock/skills:tdd",
+        "obra/superpowers:verification-before-completion"
+      ]
+    },
+    {
+      "id": "devops",
+      "description": "Docker, GitHub Actions, deploy e rollback",
+      "local_skills": [
+        "docker-compose-hardening",
+        "ci-pipeline-gates",
+        "release-rollback"
+      ],
+      "external_skills": [
+        "vercel-labs/agent-skills:deploy-to-vercel",
+        "cloudflare/skills:wrangler"
+      ]
+    },
+    {
+      "id": "cloudflare",
+      "description": "Workers, D1/R2, auth edge, Turnstile e CDN",
+      "local_skills": [
+        "edge-deployment-safety",
+        "security-header-audit"
+      ],
+      "external_skills": [
+        "cloudflare/skills:cloudflare",
+        "cloudflare/skills:workers-best-practices",
+        "cloudflare/skills:turnstile-spin",
+        "cloudflare/skills:workers-development",
+        "cloudflare/skills:wrangler",
+        "cloudflare/skills:web-perf"
+      ]
+    },
+    {
+      "id": "payments",
+      "description": "Stripe, assinaturas, checkout seguro e webhooks",
+      "local_skills": [
+        "webhook-idempotency",
+        "payment-flow-acceptance"
+      ],
+      "external_skills": []
+    },
+    {
+      "id": "observability",
+      "description": "Sentry, tracing, incidentes, alertas e análise de erros",
+      "local_skills": [
+        "observability-baseline",
+        "incident-postmortem"
+      ],
+      "external_skills": [
+        "getsentry/skills:code-simplifier",
+        "getsentry/skills:secret-serialization"
+      ]
+    },
+    {
+      "id": "agent-ops",
+      "description": "Skills confiáveis, isolamento, orquestração e economia de tokens",
+      "local_skills": [
+        "agent-handoff-contract",
+        "skill-supply-chain",
+        "context-budget-routing",
+        "agent-regression-evals"
+      ],
+      "external_skills": [
+        "obra/superpowers:dispatching-parallel-agents",
+        "getsentry/skills:skill-scanner",
+        "getsentry/skills:prompt-optimizer"
+      ]
+    },
+    {
+      "id": "mobile",
+      "description": "React Native, UX mobile e performance",
+      "local_skills": [
+        "mobile-release-check",
+        "wcag-keyboard-audit"
+      ],
+      "external_skills": [
+        "vercel-labs/agent-skills:vercel-react-native-skills"
+      ]
+    },
+    {
+      "id": "ai-apps",
+      "description": "RAG, prompts, evals e funcionalidades LLM",
+      "local_skills": [
+        "rag-evaluation",
+        "agent-regression-evals",
+        "context-budget-routing"
+      ],
+      "external_skills": [
+        "cloudflare/skills:agents-sdk"
+      ]
+    },
+    {
+      "id": "growth",
+      "description": "Analytics, experimentação, UX conversão e onboarding",
+      "local_skills": [
+        "analytics-event-plan",
+        "search-intent-mapping"
+      ],
+      "external_skills": [
+        "coreyhaines31/marketingskills:analytics",
+        "coreyhaines31/marketingskills:ab-testing",
+        "coreyhaines31/marketingskills:onboarding",
+        "coreyhaines31/marketingskills:conversion-tracking"
+      ]
+    }
+  ],
+  "external_skills": [
+    {
+      "id": "addyosmani/web-quality-skills:accessibility",
+      "repo": "addyosmani/web-quality-skills",
+      "name": "accessibility",
+      "source": "https://github.com/addyosmani/web-quality-skills",
+      "packs": [
+        "accessibility"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "addyosmani/web-quality-skills:core-web-vitals",
+      "repo": "addyosmani/web-quality-skills",
+      "name": "core-web-vitals",
+      "source": "https://github.com/addyosmani/web-quality-skills",
+      "packs": [
+        "performance"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "addyosmani/web-quality-skills:performance",
+      "repo": "addyosmani/web-quality-skills",
+      "name": "performance",
+      "source": "https://github.com/addyosmani/web-quality-skills",
+      "packs": [
+        "performance"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "addyosmani/web-quality-skills:seo",
+      "repo": "addyosmani/web-quality-skills",
+      "name": "seo",
+      "source": "https://github.com/addyosmani/web-quality-skills",
+      "packs": [
+        "seo"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "addyosmani/web-quality-skills:web-quality-audit",
+      "repo": "addyosmani/web-quality-skills",
+      "name": "web-quality-audit",
+      "source": "https://github.com/addyosmani/web-quality-skills",
+      "packs": [
+        "performance"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "cloudflare/skills:agents-sdk",
+      "repo": "cloudflare/skills",
+      "name": "agents-sdk",
+      "source": "https://github.com/cloudflare/skills",
+      "packs": [
+        "ai-apps"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "cloudflare/skills:cloudflare",
+      "repo": "cloudflare/skills",
+      "name": "cloudflare",
+      "source": "https://github.com/cloudflare/skills",
+      "packs": [
+        "cloudflare"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "cloudflare/skills:turnstile-spin",
+      "repo": "cloudflare/skills",
+      "name": "turnstile-spin",
+      "source": "https://github.com/cloudflare/skills",
+      "packs": [
+        "cloudflare"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "cloudflare/skills:web-perf",
+      "repo": "cloudflare/skills",
+      "name": "web-perf",
+      "source": "https://github.com/cloudflare/skills",
+      "packs": [
+        "cloudflare"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "cloudflare/skills:workers-best-practices",
+      "repo": "cloudflare/skills",
+      "name": "workers-best-practices",
+      "source": "https://github.com/cloudflare/skills",
+      "packs": [
+        "cloudflare"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "cloudflare/skills:workers-development",
+      "repo": "cloudflare/skills",
+      "name": "workers-development",
+      "source": "https://github.com/cloudflare/skills",
+      "packs": [
+        "cloudflare"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "cloudflare/skills:wrangler",
+      "repo": "cloudflare/skills",
+      "name": "wrangler",
+      "source": "https://github.com/cloudflare/skills",
+      "packs": [
+        "devops",
+        "cloudflare"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "coreyhaines31/marketingskills:ab-testing",
+      "repo": "coreyhaines31/marketingskills",
+      "name": "ab-testing",
+      "source": "https://github.com/coreyhaines31/marketingskills",
+      "packs": [
+        "growth"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "coreyhaines31/marketingskills:ai-seo",
+      "repo": "coreyhaines31/marketingskills",
+      "name": "ai-seo",
+      "source": "https://github.com/coreyhaines31/marketingskills",
+      "packs": [
+        "seo"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "coreyhaines31/marketingskills:analytics",
+      "repo": "coreyhaines31/marketingskills",
+      "name": "analytics",
+      "source": "https://github.com/coreyhaines31/marketingskills",
+      "packs": [
+        "growth"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "coreyhaines31/marketingskills:conversion-tracking",
+      "repo": "coreyhaines31/marketingskills",
+      "name": "conversion-tracking",
+      "source": "https://github.com/coreyhaines31/marketingskills",
+      "packs": [
+        "growth"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "coreyhaines31/marketingskills:onboarding",
+      "repo": "coreyhaines31/marketingskills",
+      "name": "onboarding",
+      "source": "https://github.com/coreyhaines31/marketingskills",
+      "packs": [
+        "growth"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "coreyhaines31/marketingskills:programmatic-seo",
+      "repo": "coreyhaines31/marketingskills",
+      "name": "programmatic-seo",
+      "source": "https://github.com/coreyhaines31/marketingskills",
+      "packs": [
+        "seo"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "coreyhaines31/marketingskills:schema",
+      "repo": "coreyhaines31/marketingskills",
+      "name": "schema",
+      "source": "https://github.com/coreyhaines31/marketingskills",
+      "packs": [
+        "seo"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "coreyhaines31/marketingskills:seo-audit",
+      "repo": "coreyhaines31/marketingskills",
+      "name": "seo-audit",
+      "source": "https://github.com/coreyhaines31/marketingskills",
+      "packs": [
+        "seo"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "coreyhaines31/marketingskills:site-architecture",
+      "repo": "coreyhaines31/marketingskills",
+      "name": "site-architecture",
+      "source": "https://github.com/coreyhaines31/marketingskills",
+      "packs": [
+        "seo"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "getsentry/skills:code-simplifier",
+      "repo": "getsentry/skills",
+      "name": "code-simplifier",
+      "source": "https://github.com/getsentry/skills",
+      "packs": [
+        "observability"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "getsentry/skills:prompt-optimizer",
+      "repo": "getsentry/skills",
+      "name": "prompt-optimizer",
+      "source": "https://github.com/getsentry/skills",
+      "packs": [
+        "agent-ops"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "getsentry/skills:secret-serialization",
+      "repo": "getsentry/skills",
+      "name": "secret-serialization",
+      "source": "https://github.com/getsentry/skills",
+      "packs": [
+        "observability"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "getsentry/skills:skill-scanner",
+      "repo": "getsentry/skills",
+      "name": "skill-scanner",
+      "source": "https://github.com/getsentry/skills",
+      "packs": [
+        "agent-ops"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "mattpocock/skills:code-review",
+      "repo": "mattpocock/skills",
+      "name": "code-review",
+      "source": "https://github.com/mattpocock/skills",
+      "packs": [
+        "engineering"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "mattpocock/skills:diagnosing-bugs",
+      "repo": "mattpocock/skills",
+      "name": "diagnosing-bugs",
+      "source": "https://github.com/mattpocock/skills",
+      "packs": [
+        "engineering"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "mattpocock/skills:domain-modeling",
+      "repo": "mattpocock/skills",
+      "name": "domain-modeling",
+      "source": "https://github.com/mattpocock/skills",
+      "packs": [
+        "engineering",
+        "backend-node"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "mattpocock/skills:improve-codebase-architecture",
+      "repo": "mattpocock/skills",
+      "name": "improve-codebase-architecture",
+      "source": "https://github.com/mattpocock/skills",
+      "packs": [
+        "engineering"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "mattpocock/skills:tdd",
+      "repo": "mattpocock/skills",
+      "name": "tdd",
+      "source": "https://github.com/mattpocock/skills",
+      "packs": [
+        "engineering",
+        "qa-testing"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "mattpocock/skills:to-spec",
+      "repo": "mattpocock/skills",
+      "name": "to-spec",
+      "source": "https://github.com/mattpocock/skills",
+      "packs": [
+        "engineering"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "nextlevelbuilder/ui-ux-pro-max-skill:ui-ux-pro-max",
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "name": "ui-ux-pro-max",
+      "source": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "packs": [
+        "design"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "obra/superpowers:dispatching-parallel-agents",
+      "repo": "obra/superpowers",
+      "name": "dispatching-parallel-agents",
+      "source": "https://github.com/obra/superpowers",
+      "packs": [
+        "agent-ops"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "obra/superpowers:systematic-debugging",
+      "repo": "obra/superpowers",
+      "name": "systematic-debugging",
+      "source": "https://github.com/obra/superpowers",
+      "packs": [
+        "engineering"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "obra/superpowers:verification-before-completion",
+      "repo": "obra/superpowers",
+      "name": "verification-before-completion",
+      "source": "https://github.com/obra/superpowers",
+      "packs": [
+        "engineering",
+        "qa-testing"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "prisma/skills:prisma-cli",
+      "repo": "prisma/skills",
+      "name": "prisma-cli",
+      "source": "https://github.com/prisma/skills",
+      "packs": [
+        "database"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "semgrep/skills:code-security",
+      "repo": "semgrep/skills",
+      "name": "code-security",
+      "source": "https://github.com/semgrep/skills",
+      "packs": [
+        "security"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "supabase/agent-skills:supabase-postgres-best-practices",
+      "repo": "supabase/agent-skills",
+      "name": "supabase-postgres-best-practices",
+      "source": "https://github.com/supabase/agent-skills",
+      "packs": [
+        "database"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "trailofbits/skills:differential-review",
+      "repo": "trailofbits/skills",
+      "name": "differential-review",
+      "source": "https://github.com/trailofbits/skills",
+      "packs": [
+        "security"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "trailofbits/skills:insecure-defaults",
+      "repo": "trailofbits/skills",
+      "name": "insecure-defaults",
+      "source": "https://github.com/trailofbits/skills",
+      "packs": [
+        "security"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "trailofbits/skills:modern-python",
+      "repo": "trailofbits/skills",
+      "name": "modern-python",
+      "source": "https://github.com/trailofbits/skills",
+      "packs": [
+        "backend-python"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "trailofbits/skills:property-based-testing",
+      "repo": "trailofbits/skills",
+      "name": "property-based-testing",
+      "source": "https://github.com/trailofbits/skills",
+      "packs": [
+        "qa-testing"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "trailofbits/skills:semgrep",
+      "repo": "trailofbits/skills",
+      "name": "semgrep",
+      "source": "https://github.com/trailofbits/skills",
+      "packs": [
+        "security"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "trailofbits/skills:sharp-edges",
+      "repo": "trailofbits/skills",
+      "name": "sharp-edges",
+      "source": "https://github.com/trailofbits/skills",
+      "packs": [
+        "security"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "trailofbits/skills:supply-chain-risk-auditor",
+      "repo": "trailofbits/skills",
+      "name": "supply-chain-risk-auditor",
+      "source": "https://github.com/trailofbits/skills",
+      "packs": [
+        "security"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "trailofbits/skills:variant-analysis",
+      "repo": "trailofbits/skills",
+      "name": "variant-analysis",
+      "source": "https://github.com/trailofbits/skills",
+      "packs": [
+        "security"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "vercel-labs/academy-skills:python-on-vercel",
+      "repo": "vercel-labs/academy-skills",
+      "name": "python-on-vercel",
+      "source": "https://github.com/vercel-labs/academy-skills",
+      "packs": [
+        "backend-python"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "vercel-labs/agent-skills:deploy-to-vercel",
+      "repo": "vercel-labs/agent-skills",
+      "name": "deploy-to-vercel",
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "packs": [
+        "devops"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "vercel-labs/agent-skills:vercel-composition-patterns",
+      "repo": "vercel-labs/agent-skills",
+      "name": "vercel-composition-patterns",
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "packs": [
+        "frontend"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "vercel-labs/agent-skills:vercel-react-best-practices",
+      "repo": "vercel-labs/agent-skills",
+      "name": "vercel-react-best-practices",
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "packs": [
+        "frontend"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "vercel-labs/agent-skills:vercel-react-native-skills",
+      "repo": "vercel-labs/agent-skills",
+      "name": "vercel-react-native-skills",
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "packs": [
+        "mobile"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "vercel-labs/agent-skills:vercel-react-view-transitions",
+      "repo": "vercel-labs/agent-skills",
+      "name": "vercel-react-view-transitions",
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "packs": [
+        "frontend"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "vercel-labs/agent-skills:web-design-guidelines",
+      "repo": "vercel-labs/agent-skills",
+      "name": "web-design-guidelines",
+      "source": "https://github.com/vercel-labs/agent-skills",
+      "packs": [
+        "frontend",
+        "design",
+        "accessibility"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "vercel/next.js:next-cache-components-adoption",
+      "repo": "vercel/next.js",
+      "name": "next-cache-components-adoption",
+      "source": "https://github.com/vercel/next.js",
+      "packs": [
+        "nextjs"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    },
+    {
+      "id": "vercel/next.js:next-cache-components-optimizer",
+      "repo": "vercel/next.js",
+      "name": "next-cache-components-optimizer",
+      "source": "https://github.com/vercel/next.js",
+      "packs": [
+        "nextjs"
+      ],
+      "installation": "skills-cli",
+      "review": "primary-project-source; cli discovery revalidates availability on install"
+    }
+  ],
+  "special_installers": [
+    {
+      "id": "impeccable",
+      "pack": "design",
+      "source": "https://github.com/pbakaus/impeccable",
+      "command": "npx impeccable install --providers=codex --no-hooks",
+      "mode": "optional-review-first"
+    },
+    {
+      "id": "playwright-cli",
+      "pack": "qa-testing",
+      "source": "https://github.com/microsoft/playwright-cli",
+      "command": "playwright-cli install --skills=agents",
+      "mode": "requires-cli"
+    },
+    {
+      "id": "sentry-codex",
+      "pack": "observability",
+      "source": "https://github.com/getsentry/plugin-codex",
+      "command": "codex plugin marketplace add getsentry/plugin-codex && codex plugin add sentry@sentry-plugin-marketplace",
+      "mode": "optional-plugin-approval"
+    },
+    {
+      "id": "stripe-codex",
+      "pack": "payments",
+      "source": "https://github.com/stripe/ai",
+      "command": "codex plugin add stripe@openai-curated",
+      "mode": "optional-plugin-approval"
+    },
+    {
+      "id": "cloudflare-codex",
+      "pack": "cloudflare",
+      "source": "https://github.com/cloudflare/skills",
+      "command": "codex plugin marketplace add cloudflare/skills && codex plugin add cloudflare@cloudflare",
+      "mode": "optional-plugin-approval"
+    }
+  ]
+}
