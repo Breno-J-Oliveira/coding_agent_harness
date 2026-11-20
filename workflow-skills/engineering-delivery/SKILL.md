@@ -1,13 +1,13 @@
 ---
 name: engineering-delivery
-description: Conduzir projeto ou funcionalidade em entregas verificáveis, com fila e retomada. Use para trabalho amplo ou retomada; ajustes simples seguem direto.
+description: Executar ou retomar uma funcionalidade com fatias verificáveis, fila, dependências e evidências de aceite.
 ---
 # Engineering delivery
 
-Identifique o objetivo, a raiz do projeto, a stack real e as verificações disponíveis. Registre um contrato curto por entrega com resultado observável, critérios de aceite e dependências.
+Parta do resultado pedido e das instruções do projeto. Para cada entrega, registre o resultado observável, os critérios de aceite verificáveis e apenas as dependências que a bloqueiam. Se o pedido começa com uma ideia de produto sem escopo, use `idea-to-release` quando disponível.
 
-Em tarefa pequena, implemente e verifique diretamente. Em trabalho maior, use fatias verticais e acione somente os papéis que reduzam retrabalho. Preserve o trabalho atual do usuário e mantenha um responsável por área de edição.
+Em tarefa pequena, implemente e verifique diretamente. Em trabalho maior, prefira fatias verticais. Acione especialistas para questões independentes de risco ou qualidade e preserve mudanças existentes.
 
-No VibeCoder Engineering OS, encontre a pasta do kit em `KIT-LOCATION.txt` quando instalado. Consulte `docs/36-engineering-os.md` e use `scripts/engineering.py` quando precisar persistir o estado. Para retomar, leia o status, a tarefa pendente e as últimas evidências. A CLI abre revisão quando declara o critério verificado. Para uma entrega executada no Desktop, use `record` com sua evidência local. Use o aceite após conferir as verificações.
+No Coding Agent Harness, consulte `KIT-LOCATION.txt` se presente. Use `scripts/engineering.py` para persistir tarefas. Para retomar, leia a próxima tarefa, suas dependências e o último resultado relevante. Na CLI, `run` encaminha resultados prontos à revisão. Em sessão interativa, registre com `record` e uma evidência local. Só dê aceite depois de conferir os critérios.
 
-Mantenha build, testes, revisão de segurança e validação visual proporcionais à mudança. Registre comandos e resultados reais. Decisões externas, produção, dados reais e custos seguem as autorizações fornecidas para a tarefa.
+Valide no ponto de entrada real da entrega. Registre comandos, status e bloqueios reais. Para `advance`, use somente a verificação independente e previamente aprovada pelo responsável pelo projeto. Publicação, dados reais e custos seguem a autorização da tarefa.

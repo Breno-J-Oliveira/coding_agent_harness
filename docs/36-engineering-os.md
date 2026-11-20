@@ -1,5 +1,7 @@
 # VibeCoder Engineering OS 4.0
 
+Para instalar em um projeto pela primeira vez ou usar Claude Code, siga o [guia da edição 4.1](38-primeira-entrega.md).
+
 Um **ambiente de engenharia de software com agentes** reúne os papéis da equipe, as instruções que cada papel usa e um fluxo verificável para entregar software. *Agentic engineering harness* é a categoria técnica mais específica. VibeCoder Engineering OS é o nome editorial escolhido para esta edição.
 
 ## Primeiros passos

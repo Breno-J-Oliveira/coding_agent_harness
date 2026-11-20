@@ -1,5 +1,12 @@
 # Changelog
 
+## 4.1.0
+
+- Bootstrap por projeto para Codex e Claude Code, com quatro skills e prévia por padrão.
+- Fluxo `idea-to-release` com referências de implementação e release carregadas por fase.
+- Fila com `start` para preparar o MVP, `brief` para execução interativa e `usage` para acompanhar consumo.
+- Lotes limitados com `advance`, aceite automático opcional via verificador independente e revisão humana nas fases críticas.
+
 ## 4.0.0 — 2026-11-20
 
 - Nome de produto VibeCoder Engineering OS e guia do fluxo de produto à operação.
